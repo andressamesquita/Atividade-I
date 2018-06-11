@@ -2,15 +2,11 @@ package usecasesDesconto;
 
 import model.Desconto;
 
-public class DescontoPFRmilPontos extends Desconto {
-
-	public DescontoPFRmilPontos(Double valor) {
-		super(valor);
-	}
+public class DescontoPFRmilPontos implements Desconto {
 
 	@Override
-	public Double calculaDesconto() {
-		return valor*0.05;
+	public Double calculaDesconto(Double valorDacompra) {
+		return valorDacompra*0.05;
 	}
 	
 

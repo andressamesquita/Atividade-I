@@ -1,13 +1,7 @@
 package model;
 
-public abstract class Desconto {
+public interface Desconto {
 	
-	protected Double valor;
-	
-	public Desconto(Double valor){
-		this.valor = valor;
-	}
-	
-	public abstract Double calculaDesconto();
+	public abstract Double calculaDesconto(Double valorDacompra);
 	
 }
